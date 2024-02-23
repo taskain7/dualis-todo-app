@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1>Todos</h1>
-      <ul>{todos.map((todo, i) => (<TodoItem key={i} todo={todo} onRemove={() => onRemove(todo)}/>))}</ul>
+      {todos.map((todo, i) => (<TodoItem key={i} todo={todo} onRemove={() => onRemove(todo)}/>))}
     </div>
   );
 }

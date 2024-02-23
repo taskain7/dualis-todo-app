@@ -9,7 +9,7 @@ function TodoItem(props: TodoItemProps) {
 
     return (
         <div>
-        <li>{props.todo.name}</li>
+        <p>{props.todo.name}</p>
         <button onClick={props.onRemove}>Delete</button>
         </div>
     );
